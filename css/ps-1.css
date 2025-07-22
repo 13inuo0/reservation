@@ -14,7 +14,7 @@ a {
 }
 .wrap {
   width: 960px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin: auto;
 }
 .navi {
@@ -39,27 +39,34 @@ a {
   background-color: rgb(98, 0, 255);
   color: aliceblue;
 }
-.container {
+/* 개인정보 */
+#singup {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 220px;
-  background-color: rgb(238, 238, 238);
-  padding: 20px 0;
-}
-.contents {
+  gap: 20px;
   width: 400px;
-  background-color: #ccc;
-  border-radius: 7px;
+  margin: 100px auto;
   padding: 20px;
-  border: 1px solid #333;
+  /* background-color: aliceblue; */
 }
-#intro:target {
-  background-color: #32ff2b;
+#singup fieldset {
+  padding: 20px;
+  border: 1px solid red;
 }
-#room:target {
-  background-color: darkorchid;
+#singup fieldset legend {
+  font-size: 13px;
+  padding: 0 10px;
 }
-#reservation:target {
-  background-color: aqua;
+#singup li {
+    display: flex;
+    align-items: center;
+  padding: 10px 0;
 }
+#signup li label{
+    width: 60px;
+    display: inline-block;
+}
+/* #singup fieldset:first-of-type li label{
+    width: 60px;
+    display: inline-block;
+} */
