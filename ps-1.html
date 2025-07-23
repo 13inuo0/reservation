@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>reservation페이지</title>
     <link rel="stylesheet" href="./css/ps-1.css" />
+        <!-- 파비콘 favicon -->
+     <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./assets/favicon/site.webmanifest" />
   </head>
   <body>
-    <div class="wrap">
+    <div class="wrap1">
       <nav class="navi">
         <ul>
           <li><a href="index.html#intro">이용안내</a></li>
@@ -21,19 +27,23 @@
         <fieldset>
           <legend>개인정보</legend>
           <ul>
-            <li><label for="fullname">이름</label></li>
-            <input type="text" id="fullname" />
+            <li>
+              <label for="fullname">이름</label>
+              <input type="text" id="fullname" />
+            </li>
           </ul>
           <ul>
-            <li><label for="tel">연락처</label></li>
-            <input type="tel" id="tel" />
+            <li>
+              <label for="tel">연락처</label>
+              <input type="tel" id="tel" />
+            </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>객실 형태</legend>
           <ul>
             <li>
-              <input type="checkbox" id="room" />
+              <input type="radio" id="room" />
               <label for="room">기본형 (최대 2인)</label>
             </li>
             <li>

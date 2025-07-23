@@ -1,44 +1,5 @@
 @charset "utf-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul,
-li {
-  list-style: none;
-}
-a {
-  color: black;
-  text-decoration: none;
-}
-.wrap {
-  width: 960px;
-  /* background-color: aliceblue; */
-  margin: auto;
-}
-.navi {
-  border-bottom: 1px solid #333;
-  background-color: rgb(255, 253, 249);
-}
-.navi ul {
-  width: 600px;
-  display: flex;
-  margin: auto;
-  background-color: rgb(250, 255, 178);
-}
-.navi ul li {
-  width: calc(100% / 4);
-  text-align: center;
-}
-.navi ul li a {
-  display: block;
-  line-height: 60px;
-}
-.navi ul li a:hover {
-  background-color: rgb(98, 0, 255);
-  color: aliceblue;
-}
+@import url("main.css");
 /* 개인정보 */
 #singup {
   display: flex;
@@ -51,22 +12,34 @@ a {
 }
 #singup fieldset {
   padding: 20px;
-  border: 1px solid red;
+  border: 1px solid rgb(98, 0, 255);
+  border-radius: 10px;
 }
 #singup fieldset legend {
   font-size: 13px;
   padding: 0 10px;
+}
+#singup fieldset ul {
+  display: inline-block;
 }
 #singup li {
     display: flex;
     align-items: center;
   padding: 10px 0;
 }
-#signup li label{
-    width: 60px;
-    display: inline-block;
-}
-/* #singup fieldset:first-of-type li label{
+/* #signup li label{
     width: 60px;
     display: inline-block;
 } */
+#singup fieldset:first-of-type li label{
+    width: 60px;
+    display: inline-block;
+}
+#singup fieldset:first-of-type li input{
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+}
+#singup fieldset:last-of-type li input{
+  margin-right: 10px;
+}
